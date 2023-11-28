@@ -56,11 +56,16 @@ button {
     cursor: pointer
 }
 
-img {
+
+
+
+.footer-link {
     display: block;
     max-width: 100%;
     height: auto
 }
+
+
 
 
 html,
@@ -72,28 +77,38 @@ body {
     scroll-behavior: smooth;
 }
 
-.container {
+
+
+/* ===========================================CONTAINER================================================================ */
+
+.container-footer {
     max-width: 375px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
+
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .container-footer {
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
     }
 }
 
- @media screen and (min-width: 1280px) {
-    .container {
+@media screen and (min-width: 1280px) {
+    .container-footer {
         max-width: 1280px;
         padding-left: 15px;
         padding-right: 15px;
     }
-} 
+}
+
+
+
+
+/* ===================================================FOOTER==================================================== */
 
 .footer {
     background-image: url(../img/mobile4.x1.png);
@@ -108,6 +123,9 @@ body {
 .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 100px;
+    padding-bottom: 0;
+    flex-direction: column;
 }
 
 .footer-list {
@@ -137,13 +155,20 @@ body {
 }
 
 
-.footer-list {
-    list-style: none;
+/* .footer-list {
+     list-style: none; 
     display: flex;
+        
     flex-wrap: wrap;
     row-gap: 25px;
-    margin-bottom: 40px;
-}
+    margin-bottom: 40px; 
+
+  
+
+    
+            
+        
+} */
 
 .footer-list-item {
     font-size: 14px;
@@ -182,76 +207,77 @@ body {
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .footer-section {
+    .footer {
         background-image: url(../img/mobile4.x2.png);
     }
 }
 
 
-/*===================================================TABLET=========================================================*/
+/*===================================================FOOTER-TABLET=========================================================*/
 
 
 
 @media screen and (min-width: 768px) {
-.container {
+    .container-footer {
         max-width: 768px;
     }
 
-        .footer {
-                background-image: url(../img/tablet3.x1.png);
-                background-position: right;
-                background-repeat: no-repeat;
-                background-size: contain;
-                padding-bottom: 40px;
-            
-        
+    .footer {
+        background-image: url(../img/tablet3.x1.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 40px;
+
+
     }
 
-        
-    
-         .footer-list {
-             flex-wrap: nowrap;
-             gap: 25px;
-             margin-bottom: 80px;
-         }
-    
-         .footer-list-item {
-             flex-basis: auto;
-         }
-    
-            .footer-accent {
-             max-width: 521px;
-             font-size: 54px;
-             line-height: 1.19;
-             margin-bottom: 0;
-         }
-    
-         .footer-accent-ukraine {
-             font-size: 54px;
-             line-height: 1.19;
-         }
-         }
+
+
+    .footer-list {
+        flex-wrap: nowrap;
+        gap: 25px;
+        margin-bottom: 80px;
+    }
+
+    .footer-list-item {
+        flex-basis: auto;
+    }
+
+    .footer-accent {
+        max-width: 521px;
+        font-size: 54px;
+        line-height: 1.19;
+        margin-bottom: 0;
+    }
+
+    .footer-accent-ukraine {
+        font-size: 54px;
+        line-height: 1.19;
+    }
+}
 
 
 
 
-                
+
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .footer-section {
+    .footer {
         background-image: url(../img/tablet3.x2.png);
     }
 }
 
-/*========================================================DESKTOP=====================================================*/
+/*========================================================FOOTER-DESKTOP=====================================================*/
 
 
 
 @media screen and (min-width: 1280px) {
-    .container {
+    .container-footer {
         max-width: 1280px;
+        align-items: flex-start;
     }
 
     .footer {
@@ -265,8 +291,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         margin-bottom: 117px;
     }
 
-        .footer-accent {
-        max-width: 800px;
+    .footer-accent {
+        max-width: 754px;
         font-size: 64px;
         line-height: 1.16;
     }
@@ -282,9 +308,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
 screen and (min-resolution: 2dppx) and (min-width: 1280px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-    .footer-section {
+    .footer {
         background-image: url(../img/desktop2.x2.png);
     }
 }
-
 
